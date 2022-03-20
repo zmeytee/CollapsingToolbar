@@ -47,12 +47,6 @@ class ToolbarFragment: Fragment(R.layout.fragment_toolbar) {
                 insets
             }
 
-//            nestedScroll.applyInsetter {
-//                type(navigationBars = true) {
-//                    padding()
-//                }
-//            }
-
             nestedScroll
                 .scrollChangeEvents()
                 .onEach {

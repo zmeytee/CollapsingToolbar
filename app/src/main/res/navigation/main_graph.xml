@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/toolbarFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.zmeytee.myapplication.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main" />
+
+    <fragment
+        android:id="@+id/toolbarFragment"
+        android:name="ru.zmeytee.myapplication.ToolbarFragment"
+        android:label="ToolbarFragment"
+        tools:layout="@layout/fragment_toolbar" />
+</navigation>

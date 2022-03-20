@@ -5,6 +5,6 @@
     </style>
 
     <style name="Expanded">
-        <item name="android:textSize">22sp</item>
+        <item name="android:textSize">30sp</item>
     </style>
 </resources>

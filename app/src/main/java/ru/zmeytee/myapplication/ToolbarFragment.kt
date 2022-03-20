@@ -5,6 +5,7 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.updatePadding
@@ -54,6 +55,15 @@ class ToolbarFragment: Fragment(R.layout.fragment_toolbar) {
                     appBar.isSelected = canScroll
                 }
                 .launchIn(viewLifecycleOwner.lifecycleScope)
+
+            toolbar.setNavigationOnClickListener {
+                Toast.makeText(requireContext(), "Back", Toast.LENGTH_SHORT).show()
+            }
+
+            toolbar.setOnMenuItemClickListener {
+                Toast.makeText(requireContext(), "Menu", Toast.LENGTH_SHORT).show()
+                true
+            }
         }
     }
 
